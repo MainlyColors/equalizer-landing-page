@@ -1,0 +1,19 @@
+/*  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*:root {
+  --clr-font-primary: #191826;
+  --clr-font-secondary: #fcfaf9;
+
+  --clr-bg-primary: #fa7453;
+  --clr-bg-ios-hover: #66e2dc;
+  --clr-bg-android-hover: #ffb964;
+}
