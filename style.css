@@ -17,3 +17,46 @@
   --clr-bg-ios-hover: #66e2dc;
   --clr-bg-android-hover: #ffb964;
 }
+
+body {
+  /* background-color: black; */
+}
+
+.top-container {
+  margin-top: 2.5rem;
+  background-image: url('./design/assets/bg-main-mobile.png');
+  /* background-size: 281px 480px; */
+  background-size: contain;
+  background-position: top -104px right;
+  background-repeat: no-repeat;
+  height: 524px;
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8.3vw, 5.5rem);
+  line-height: clamp(3rem, 8.3vw, 5.5rem);
+  letter-spacing: calc(clamp(0.028125rem, 0.09469vw, 0.0625rem) * -1);
+  font-weight: 700;
+}
+
+header > p {
+  font-size: clamp(1rem, 2.3vw, 1.25rem);
+  line-height: clamp(1.625rem, 3.6vw, 2.125rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4.2vw, 2.5rem);
+  line-height: clamp(2.5rem, 5.2vw, 3.25rem);
+  font-weight: 700;
+}
+
+main > p {
+  font-size: clamp(1.125rem, 2.3vw, 1.25rem);
+  line-height: clamp(1.75rem, 3.6vw, 2.125rem);
+}
+
+footer > p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
