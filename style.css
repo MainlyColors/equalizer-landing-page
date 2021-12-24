@@ -1,5 +1,8 @@
 /*  */
 
+/* * {
+  outline: solid 3px red;
+} */
 *,
 *::before,
 *::after {
@@ -20,20 +23,32 @@
 
 body {
   /* background-color: black; */
+  background-color: var(--clr-font-secondary);
+}
+
+/* top section */
+.logo {
+  margin-bottom: 4rem;
 }
 
 .top-container {
   margin-top: 2.5rem;
+  margin-left: clamp(1.5rem, 5.07vw, 10.3125rem);
   background-image: url('./design/assets/bg-main-mobile.png');
   /* background-size: 281px 480px; */
   background-size: contain;
   background-position: top -104px right;
   background-repeat: no-repeat;
   height: 524px;
-  width: 100%;
+  /* width: 100%; */
+}
+
+header {
+  width: clamp(20.4375rem, 67.71vw, 63.4375rem);
 }
 
 h1 {
+  margin-bottom: clamp(1.25rem, 3.64vw, 2.5rem);
   font-size: clamp(2.5rem, 8.3vw, 5.5rem);
   line-height: clamp(3rem, 8.3vw, 5.5rem);
   letter-spacing: calc(clamp(0.028125rem, 0.09469vw, 0.0625rem) * -1);
@@ -43,19 +58,96 @@ h1 {
 header > p {
   font-size: clamp(1rem, 2.3vw, 1.25rem);
   line-height: clamp(1.625rem, 3.6vw, 2.125rem);
+  max-width: 51.5625rem;
+}
+
+/* middle section */
+
+.premium-card {
+  padding-left: clamp(2.25rem, 6.25vw, 3.375rem);
+  padding-top: clamp(3rem, 6.25vw, 3.625rem);
+  width: clamp(23.4375rem, 51.95vw, 27.875rem);
+  height: clamp(34.125rem, 71.1vw, 39.0625rem);
+  background-color: var(--clr-bg-primary);
+  border-radius: 0.75rem;
 }
 
 h2 {
+  margin-bottom: clamp(0.75rem, 1.5625vw, 1.375rem);
   font-size: clamp(2rem, 4.2vw, 2.5rem);
   line-height: clamp(2.5rem, 5.2vw, 3.25rem);
   font-weight: 700;
+  color: var(--clr-font-secondary);
 }
 
-main > p {
+.premium-card > p {
+  margin-bottom: clamp(2.25rem, 4.69vw, 2.4375rem);
   font-size: clamp(1.125rem, 2.3vw, 1.25rem);
   line-height: clamp(1.75rem, 3.6vw, 2.125rem);
+  color: var(--clr-font-secondary);
 }
 
+.per-month-container {
+  margin-bottom: clamp(2rem, 4.16vw, 2.875rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--clr-font-secondary);
+}
+
+.per-month-container span:first-child {
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+}
+
+.per-month-container span:last-child {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  width: clamp(18.5rem, 38.5vw, 20.8125rem);
+  height: 3.8125rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.download-btn span:first-child {
+  line-height: 1.25rem;
+}
+
+.download-btn:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.ios-btn {
+  background-color: var(--clr-font-primary);
+  color: var(--clr-font-secondary);
+}
+
+.ios-btn:hover {
+  background-color: var(--clr-bg-ios-hover);
+}
+
+.android-btn {
+  background-color: var(--clr-font-secondary);
+  color: var(--clr-font-primary);
+}
+
+.android-btn:hover {
+  background-color: var(--clr-bg-android-hover);
+}
+
+/* bottom section */
 footer > p {
   font-size: 1rem;
   line-height: 1.625rem;
