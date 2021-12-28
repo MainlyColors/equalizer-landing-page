@@ -1,8 +1,7 @@
-/*  */
-/* 
 * {
   outline: solid 3px red;
-} */
+}
+
 *,
 *::before,
 *::after {
@@ -35,8 +34,8 @@ body {
   margin-top: 2.5rem;
   margin-left: clamp(1.5rem, 5.07vw, 10.3125rem);
   background-image: url('./design/assets/bg-main-mobile.png');
-  /* background-size: 281px 480px; */
-  background-size: contain;
+  background-size: 281px 480px;
+  /* background-size: contain; */
   background-position: top -104px right;
   background-repeat: no-repeat;
   height: 524px;
@@ -230,6 +229,10 @@ footer p > a {
 
 .logo-links-container > a:hover {
   color: var(--clr-bg-primary);
+}
+
+.logo-links-container svg {
+  display: block;
 }
 
 /* between mobile 375px and tablet 600 px */
