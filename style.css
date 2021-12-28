@@ -22,8 +22,10 @@
 
 body {
   position: relative;
-  /* background-color: black; */
   background-color: var(--clr-font-secondary);
+  /* lock out wide screens  */
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 /* top section */
