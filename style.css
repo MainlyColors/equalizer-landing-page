@@ -406,3 +406,13 @@ footer p > a {
     grid-row: 1 / 2;
   }
 }
+
+/* wide screen */
+@media screen and (min-width: 90rem) {
+  /* top section */
+
+  .top-bg {
+    background-position: top -10.875rem left;
+    width: 100.8125rem;
+  }
+}
