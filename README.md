@@ -144,6 +144,12 @@ For the mobile design there only needs to be 1 column with 5 rows and then each 
 }
 
 ```
+A visual of the CSS Grid
+
+![](./screenshots/Mobile-design-grid.PNG)
+
+
+
 # CSS - Tablet Design
 
 The tablet view gets a little more complicated, now we need 5 rows and 5 columns for each section. The grid is broken up into each section where a object starts or stops. I tried to make these values responsive for the desktop view but there was no easy way since the design breaks out of its tablet groupings.
@@ -192,6 +198,11 @@ The tablet view gets a little more complicated, now we need 5 rows and 5 columns
   }
   }
 ```
+A visual of the CSS Grid
+
+![](./screenshots/Tablet-design-grid.PNG)
+
+
 # CSS - Desktop Design 🖥
 
 The Desktop view is similar to the tablet with some values changed
@@ -223,6 +234,10 @@ The Desktop view is similar to the tablet with some values changed
   }
 }
 ```
+
+A visual of the CSS Grid
+
+![](./screenshots/Desktop-design-grid.PNG)
 
 ## Author
 
