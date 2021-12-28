@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: solid 3px red;
-}
+} */
 
 *,
 *::before,
@@ -21,23 +21,37 @@
 }
 
 body {
+  position: relative;
   /* background-color: black; */
   background-color: var(--clr-font-secondary);
 }
 
 /* top section */
+
+.top-bg {
+  position: absolute;
+  top: -2.5rem;
+  right: 0px;
+  background-image: url('./design/assets/bg-main-mobile.png');
+  background-size: 17.5625rem 30rem;
+  background-position: top -6.5rem right -4.0625rem;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+  z-index: -9999;
+}
+
+.top-bg img {
+  display: none;
+}
+
 .logo {
   margin-bottom: 4rem;
 }
 
 .top-container {
-  margin-top: 2.5rem;
+  margin-top: clamp(2.5rem, 8.07vw, 3.875rem);
   margin-left: clamp(1.5rem, 5.07vw, 10.3125rem);
-  background-image: url('./design/assets/bg-main-mobile.png');
-  background-size: 281px 480px;
-  /* background-size: contain; */
-  background-position: top -104px right;
-  background-repeat: no-repeat;
   height: 524px;
   /* width: 100%; */
 }
@@ -244,6 +258,25 @@ footer p > a {
 
 /* tablet view */
 @media screen and (min-width: 37.5rem) {
+  /* top section */
+
+  .top-bg {
+    top: -3.875rem;
+    background-image: url('./design/assets/bg-main-tablet.png');
+    background-size: 61.4375rem 50.5rem;
+    background-position: top -7rem left -15.875rem;
+    height: 50.5rem;
+  }
+
+  .top-bg img {
+    position: absolute;
+    top: -2rem;
+    right: -2.25rem;
+    display: block;
+    width: clamp(16.6875rem, 34.77vw, 19.5rem);
+    height: auto;
+  }
+
   /* middle section */
   main {
     width: clamp(43.5rem, 90.625vw, 69.375rem);
@@ -313,6 +346,24 @@ footer p > a {
 
 /* desktop view */
 @media screen and (min-width: 69.375rem) {
+  /* top section */
+
+  .top-bg {
+    background-image: url('./design/assets/bg-main-desktop.png');
+    background-size: 100.8125rem 109.875rem;
+    background-position: top -10.875rem left -9.125rem;
+    height: 109.875rem;
+  }
+
+  .top-bg img {
+    position: absolute;
+    top: -2.5rem;
+    right: 0px;
+    display: block;
+    width: clamp(16.6875rem, 34.77vw, 19.5rem);
+    height: auto;
+  }
+
   /* middle section */
   main {
     /* 69.375rem total */
