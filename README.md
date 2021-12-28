@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor submission/solution](https://www.frontendmentor.io/solutions/responsive-vanilla-htmlcss-solution--JXSjM7lO)
 - [Live site](https://mainlycolors.github.io/equalizer-landing-page/)
 
 ## My process
